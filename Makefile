@@ -14,3 +14,5 @@ data:
 	docker exec laravel-docker bash -c "php artisan migrate"
 	docker exec laravel-docker bash -c "php artisan db:seed"
 
+cd:	
+	docker exec -it laravel-docker bash
