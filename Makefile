@@ -12,7 +12,7 @@ composer-update:
 	docker exec laravel-docker-app bash -c "composer update"
 data:
 	docker exec laravel-docker-app bash -c "php artisan migrate --force"
-	docker exec laravel-docker-app bash -c "php artisan db:seed --class=CustomSeeder --no-interaction"
+	docker exec laravel-docker-app bash -c "php artisan db:seed --force"
 
 cd:	
 	docker exec -it laravel-docker-app bash
